@@ -3,11 +3,11 @@
 # Date: 2025-12-01
 
 # Part 1:
-instructions = open('day1_data.txt')
+puzzle_input = open('day1_data.txt')
 
 counter = 0
 location = 50
-for line in instructions:
+for line in puzzle_input:
     code = line.strip()
     direction = code[0]
     distance = int(code[1:])
@@ -28,12 +28,12 @@ for line in instructions:
 print(f'Part 1 Counter: {counter}')
 
 # Part 2:
-instructions = open('day1_data.txt')
+puzzle_input = open('day1_data.txt')
 
 counter = 0
 location = 50
 
-for line in instructions:
+for line in puzzle_input:
     code = line.strip()
     direction = code[0]
     distance = int(code[1:])
