@@ -46,3 +46,4 @@ for line in puzzle_input:
     total_joltage += bank_joltage
 
 print(total_joltage)
+puzzle_input.close()
