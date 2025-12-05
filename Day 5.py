@@ -31,4 +31,8 @@ puzzle_input.close()
 puzzle_input = open('day5_data.txt')
 
 ranges = list()
-items = list()
+for line in puzzle_input:
+    if "-" in line:
+        low, high = line.strip().split(sep = "-")
+        tup = (int(low),int(high))
+        ranges.append(tup)
